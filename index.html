@@ -16,8 +16,27 @@
         body {
          paddingi-top: 60px;
         }
+       .linediv-l {
+         border-right: 1px white solid;
+       }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
       }
 
+      /* Landscape phones and down */
+      @media (max-width: 480px) {
+       .copy {
+         padding: 2.5% 10%;
+       }
+       .linedivi-l {
+         border-bottom: 1px white solid;
+       }
+       .linedivi-r {
+         border-top: 1px white solid;
+       }
+      }
+      
       /* All form factors */
 
       /* Main body and heading */
@@ -38,6 +57,23 @@
         line-height: 24px;
       }
 
+      /* Video pitch and Action */
+      .pitch {
+        padding: 2.5% 0%;
+      }
+      .order {
+        padding: 2% 0%;
+      }
+      .actions {
+        background-color: #323232;
+        padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+      }
+      .statistics h3, .statistics p {
+        color: white;
+      }
 
       body {
         padding-top: 20px;
@@ -114,10 +150,36 @@
 	  <p class="lead">One sentence description.</p>
 	</div>
       </div>
+      <div class="row-fulid pitch">
+	<div class="span5 offset1 video">
+	  <img class="img-polaroid" src="http://placehold.it/400x300">
+	</div>
 
-
-      <div class="row navigation">
-	<div class="span2 logo">
+	<!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+	<div class="span5 actions">
+	  <div clas="span8 offset2">
+	    <div class="statistics">
+	      <div class="span4">
+		<!-- linediv-l and linediv-r give dividing lines that look different in horizontal and vertical layouts,
+		     illustrating media queries. -->
+		<div class="linediv-1">
+		  <h3>1000</h3> <p>backers</p>
+		</div>
+	      </div>
+	      <div class="span4">
+		<div class="linediv-c">
+		  <h3>$6000</h3> <p>of $10,000</p>
+		</div>
+	      </div>
+	      <div class="span4">
+		<div class="linediv-r">
+		  <h3>10</h3> <p>days left</p>
+		</div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="row navigation">
+	    <div class="span2 logo">
 	  Logo3
 	</div>
 	<div class="span6 blank">
